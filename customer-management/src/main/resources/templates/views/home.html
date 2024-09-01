@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title th:replace="${view} :: title"></title>
+    <link rel="stylesheet" href="/css/root.css">
+    <link rel="stylesheet" href="/css/home-page.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <script src="/js/home-page.js"></script>
+    <link rel="stylesheet" href="/css/styles.css">
+
+</head>
+<body class="admin"
+      style="background: url('https://infixbiz.ischooll.com/public/backEnd/img/body-bg.jpg')  no-repeat center; background-size: cover;
+       background-attachment: fixed; background-position: top;  ">
+
+<div th:replace="fragments/navbar :: navbar"></div>
+
+<div class="content">
+        <div th:replace="${view} :: content"></div> <!-- Correctly replacing content -->
+</div>
+</body>
+
+</html>
